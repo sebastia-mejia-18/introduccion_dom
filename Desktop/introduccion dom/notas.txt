@@ -1,11 +1,101 @@
-freepik
-imagenes con buena calidad
+Recursos multimedia
 
-pixabyte
+https://www.freepik
+https://pixabay
+https://iconos8
+https://leonardo
+
+metodos de los arreglos: estos metodos son solo para arreglo (osea que esten dentro de un arreglo)
+
+  map()-> es un metodo de iteracion que manipula todo tipo de arreglo, el cual retornara un nuevo
+  tipo de arreglo
+
+  filter()-> es un metodo de iteracion que filtra el contenido 
+  de un arreglo bajo una condicion retornado un nuevo arreglo
+
+  find()-> es una iteracion que busca un unico elemento dentro den un arreglo
+  y retorna ese elemento
+
+  some()-> iteracionque busca un unico elemento dentro de un arreglo y retorna true o false
+
+  push()-> es un metodo que agrega un metodo que agrega un elemento a la ultima posicion 
+  del arreglo actual
+
+  pop()-> metodo que elimina la ultima posicion de un arreglo
+
+  shift()-> metodo que elimiina la primera posicion de un arreglo
+
+  unshift()-> metodo que agrega un elemento a la primera posicion de un arreglo
+
+  splice()-> metodo que elimina un metodo de una posicion 'n' de un arreglo
+  (n puede ser cual quier valor)
+
+  forEach()-> lo mismo que el map pero sin retorno de arreglo
 
 
-icons8
-para iconos
+  Metodos Mutables-> modifica el arreglo original
+
+  Metodos no Mutables-> NO modifica el arreglo original
+  map()
+
+
+
+
+
+
+Objetos: 
 
 leonardo.ai
 imagens con inteligencai artifical
+
+casi todas las etiquetas tienen una propiedad textContent (menos los input),
+
+1.0-la cual permite acceder al texto que es visible para el usuario.
+
+1.1-Para los input la propiedadque permite ver y manipular el contenido es la value.
+
+1.2una estructura de datos que pueda almacenar cual cualquier otro tipo de datos (llave y otro valor)
+literales o objetos por constructor
+
+---------------------------------------------------------------------------------------|
+1.3-el DOM es manipulado por medio de eventos                                          |
+                                                                                       |
+eventosde usuario -> Toda accion que realiza un usuariodentro de la opcion             |
+clik, doble clik, scroll, presionar una tecla, ETC                                     |
+                                                                                       |
+eventos de documentos -> Toda accion que se realiza por debajo y no es visible         |
+para el usuario                                                                        |
+                                                                                       |
+los eventos son funciones o acciones que se pueden definir desde el html o             |
+desde el JavaScript                                                                    |
+y siempre seran ejecutados por medio de funciones                                      |
+---------------------------------------------------------------------------------------|
+
+
+funciones-> bloque de codigo encapsulado que se puede llamr donde quiera
+ y ejecutara una accion definida
+ Toda funcion trabaja dos tiempos: su definicio y su llamado o invicacion debe existir siempre los dos
+ por que si no existen no se puede hacer nada
+
+   funciones regulares: hay dos tipos de funciones regulares
+     declarativas o las de exprecion
+
+   funciones flecha: solo hay un tipo de funciones flecha que es
+   de exprecion
+
+   funciones anonimas: es una funcion que no tiene nombre y se ejecuta solo donde se 
+   definio
+
+   funciones declarativas-> se almacenan en el alcance global de la aplicacion(hoisting)
+
+   No retorno-> ejecuta y muestra en la misma funcion (void)
+   retorno -> una ejecucion que hace una funcion y que se prodra utilizar despues
+
+   eventos predeterminado 
+   mause -> clik, doble clik, ingreso del mause, salida del mause, scroll
+   onclick,ondblclick,onmauseenter, onmauseout
+   teclado -> 
+
+   Modulos-> son una importacion y exportacion de contenido entre archivo JavaScript
+   cuando trabajamos con modulos  (import/export) los eventos se programan por medio del escuchador
+   de eventos: addeventListener
