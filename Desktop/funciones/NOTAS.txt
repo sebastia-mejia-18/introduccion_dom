@@ -1,0 +1,50 @@
+funciones
+
+tipos de funciones
+
+.funciones regulares
+  declarativas: se puede ejecutar antes y depues de ser declarada o en cualquier parte del codigo 
+  de expresion: es una funcion que no va tener un hoisting y solo de pueden ejecutar
+  despues de ser definida y seria local de ahi para abajo
+
+.funciones flecha
+  de Expresion: es la misma cosa que la regular de expresion pero enfomar de flecha
+
+.funciones Anonimas: es una funcion sin nombre que se ejecuta una sola vez
+dentro de su definicion
+
+
+NOTA: se podria decir que una funcion regular y una funcion flecha,
+es la asignacion de una funcion Anonima a una varible, Nombrar una funscion
+Anonima 
+
+NOTA 2: TODAS las funciones pueden tener argumentos, parametros y retornos
+
+
+
+toda funcion siempre va a trabajar en dos tiempos: definicion y llamado o invocar
+     Definicion: es la contruccion de la funcion y su codigo a ejecutar
+     llamado: la utilizacíon de la funcíon
+
+Argumentos : Los valores real que ingresen a la funcion y se implementan en
+el llamado o invocacion
+Parametros : Las variables o "placeHolders" que toman las funciones para ejecutarse
+dentro de la funcion, que estos se implementan en la definicion de la funcíon
+
+retorno y no retorno
+
+void no retorna informacíon
+
+
+return-> sirve para almacenar datos pero no se puede declarar
+ dos veces en la misma funcion sepuede declarar dos veces pero con diferente valor
+
+
+
+
+ THIS: es una palabra clave que se refiere al contexto en el que se está ejecutando el código.
+  Su valor puede variar dependiendo de cómo se llame a una función.
+
+
+en resumen, this es una forma de referirse al contexto de ejecución en JavaScript, y su comportamiento puede ser un poco confuso,
+pero es fundamental para comprender cómo funcionan los objetos y las funciones en el lenguaje.
