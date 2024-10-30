@@ -17,7 +17,8 @@ querySelector
 // console.log(document.querySelectorAll("form"))
 
 import { buscarUsuario } from "../../../controller/ControllerUsuarios.js"
-import { listarRecetasNoVegetarianas, listarRecetasVegetarianas } 
+import { listarRecetasNoVegetarianas, listarRecetasVegetarianas,FiltrarPorDificultad,
+    filtrarPorTipo,FiltrarPorNombre } 
 from "../../../controller/controllerProyectos.js"
 
 let btnIniciar = document.querySelector('#btnIniciar')
@@ -35,17 +36,45 @@ let btnIniciar = document.querySelector('#btnIniciar')
 }
 
 
-document.getElementById('DiseñoWeb').addEventListener('click',()=>{
-    listarRecetasVegetarianas()
-})
-document.getElementById('Back').addEventListener('click',()=>{
-    listarRecetasNoVegetarianas()
-})
-document.getElementById('cerrar-Sesión').addEventListener('click',()=>{
-    window.location.href='/index.html'
-})
+let vegetarianas = document.getElementById('vegetarianas')
+if (vegetarianas){
+    vegetarianas.addEventListener('click', () =>{
+        listarRecetasVegetarianas()
+    })
+}
 
+let novegetarianas = document.getElementById('no-vegetarianas')
+if (novegetarianas){
+    novegetarianas.addEventListener('click', () =>{
+        listarRecetasNoVegetarianas()
+    })
+}
 
+let cerrarSesión = document.getElementById('cerrar-Sesion')
+if (cerrarSesión){
+    cerrarSesión.addEventListener('click', () =>{
+       window.location.href='/index.html'
+    })
+}
+
+  let inputs = document.querySelectorAll('form input')
+  inputs.forEach((input)=>{
+    input.addEventListener('keyup', (e)=>{
+      switch (e.target.name) {
+        case "Nombre":
+          FiltrarPorNombre(e.target.value)
+            break;
+      
+        case "Dificultad":
+            FiltrarPorDificultad()
+            break;
+
+        case "Tipo":
+            filtrarPorTipo()
+            break;
+      }
+      })
+   })
 
 
 // let iniciarSesion = function () { /* Función de expresión */

@@ -1,9 +1,6 @@
 import { recetasVegetarianas, recetasNoVegetarianas } from "../model/modelPryectos.js";
 
 
-
-
-
 export function listarRecetasVegetarianas() {
   document.getElementById('contenido').innerHTML=''
   recetasVegetarianas.map((recetasVegetarianas)=>{
@@ -28,9 +25,6 @@ recetasVegetarianas.map((recetasVegetarianas)=>{
 }
 
 
-
-
-
 export function listarRecetasNoVegetarianas() {
  document.getElementById('contenido').innerHTML=''
  recetasNoVegetarianas.map((recetasNoVegetarianas)=>{
@@ -52,3 +46,18 @@ export function listarRecetasNoVegetarianas() {
   document.getElementById('contenido').append(contenedor)
   })
 }
+
+export function FiltrarPorNombre(value){
+let recetas = recetasVegetarianas.filter((recetasVegetarianas) => recetasVegetarianas.nombre==value)
+console.log(recetas)
+}
+
+
+export function filtrarPorTipo(){
+  
+}
+
+export function FiltrarPorDificultad() {
+  
+}
+
