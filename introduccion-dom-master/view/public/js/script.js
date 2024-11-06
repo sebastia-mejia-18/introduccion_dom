@@ -50,7 +50,7 @@ if (novegetarianas){
     })
 }
 
-let cerrarSesión = document.getElementById('cerrar-Sesion')
+let cerrarSesión = document.getElementById('cerrar-Sesión')
 if (cerrarSesión){
     cerrarSesión.addEventListener('click', () =>{
        window.location.href='/index.html'
@@ -66,11 +66,11 @@ if (cerrarSesión){
             break;
       
         case "Dificultad":
-            FiltrarPorDificultad()
+            FiltrarPorDificultad(e.target.value)
             break;
 
         case "Tipo":
-            filtrarPorTipo()
+            filtrarPorTipo(e.target.value)
             break;
       }
       })
