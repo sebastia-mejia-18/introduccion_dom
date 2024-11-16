@@ -8,21 +8,21 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="title"  >Calculadora de Pensiones</h1>
+        <h1 class="title">Calculadora de Pensiones</h1>
         <form id="pensionForm">
             <label for="nombre">Nombre *</label>
-<input type="text" id="nombre" name="nombre" required>
-
+            <input type="text" id="nombre" name="nombre" required>
 
             <label for="apellidos">Apellidos *</label>
             <input type="text" id="apellidos" required>
 
-            <label class="genero" >Género *</label>
+            <label class="genero">Género *</label>
             <label><input type="radio" name="genero" value="hombre" required> Hombre</label>
             <label><input type="radio" name="genero" value="mujer"> Mujer</label>
 
             <label>Fecha de nacimiento *</label>
-            <select class="form-select" aria-label="Default select example">
+            <select id="diaNacimiento" class="form-select" aria-label="Día de nacimiento">
+                <option value="" disabled selected>Día</option>
                 <option selected>dia</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -56,9 +56,9 @@
                 <option value="30">30</option>
                 <option value="31">31</option>
               </select>
-              
-              <select class="form-select" aria-label="Default select example">
-                <option selected>mes</option>
+
+            <select id="mesNacimiento" class="form-select" aria-label="Mes de nacimiento">
+                <option value="" disabled selected>Mes</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -72,8 +72,9 @@
                 <option value="11">11</option>
                 <option value="12">12</option>
               </select>
-              <select class="col-xs-12 form-select error" name="fAnio" required="">
-                <option selected>año</option>                                           
+
+            <select id="anioNacimiento" class="form-select" aria-label="Año de nacimiento">
+                <option value="" disabled selected>Año</option>                                         
                 <option value="1956">1956</option>
                 <option value="1957">1957</option>
                 <option value="1958">1958</option>
@@ -128,68 +129,66 @@
                 <option value="2007">2007</option>
               </select>
 
-              <label for="edadCotisacion">edad en que empesaste a hacer aportes de pension</label>
-              <select class="edadCotisacion" aria-label="Default select example">
-    <option selected>0</option> 
-    <option value="14">14</option>
-    <option value="15">15</option>
-    <option value="16">16</option>
-    <option value="17">17</option>
-    <option value="18">18</option>
-    <option value="19">19</option>
-    <option value="20">20</option>
-    <option value="21">21</option>
-    <option value="22">22</option>
-    <option value="23">23</option>
-    <option value="24">24</option>
-    <option value="25">25</option>
-    <option value="26">26</option>
-    <option value="27">27</option>
-    <option value="28">28</option>
-    <option value="29">29</option>
-    <option value="30">30</option>
-    <option value="31">31</option>
-    <option value="32">32</option>
-    <option value="33">33</option>
-    <option value="34">34</option>
-    <option value="35">35</option>
-    <option value="36">36</option>
-    <option value="37">37</option>
-    <option value="38">38</option>
-    <option value="39">39</option>
-    <option value="40">40</option>
-    <option value="41">41</option>
-    <option value="42">42</option>
-    <option value="43">43</option>
-    <option value="44">44</option>
-    <option value="45">45</option>
-    <option value="46">46</option>
-    <option value="47">47</option>
-    <option value="48">48</option>
-    <option value="49">49</option>
-    <option value="50">50</option>
-    <option value="51">51</option>
-    <option value="52">52</option>
-    <option value="53">53</option>
-    <option value="54">54</option>
-    <option value="55">55</option>
-    <option value="56">56</option>
-    <option value="57">57</option>
-    <option value="58">58</option>
-              </select>
+            <label for="edadCotisacion">Edad en que empezaste a hacer aportes de pensión</label>
+            <select id="edadCotisacion" aria-label="Edad de cotización">
+                <option selected>0</option> 
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+                <option value="32">32</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+                <option value="41">41</option>
+                <option value="42">42</option>
+                <option value="43">43</option>
+                <option value="44">44</option>
+                <option value="45">45</option>
+                <option value="46">46</option>
+                <option value="47">47</option>
+                <option value="48">48</option>
+                <option value="49">49</option>
+                <option value="50">50</option>
+                <option value="51">51</option>
+                <option value="52">52</option>
+                <option value="53">53</option>
+                <option value="54">54</option>
+                <option value="55">55</option>
+                <option value="56">56</option>
+                <option value="57">57</option>
+                <option value="58">58</option>
+                          </select>
 
-              
-
-            <label for="semanasColpensiones">Semanas cotizadas</label>
+            <label for="semanasColpensiones">Semanas cotizadas a Colpensiones</label>
             <input type="number" id="semanasColpensiones" placeholder="0">
-            
 
             <label for="semanasPrivados">Semanas cotizadas a fondos privados</label>
             <input type="number" id="semanasPrivados" placeholder="0">
 
             <label for="entidad">Entidad de afiliación actual *</label>
-            <select class="edadCotisacion" aria-label="Default select example">
-                <option selected>entidad</option>
+            <select id="entidad" aria-label="Entidad de afiliación">
+                <option value="" disabled selected>Seleccione entidad</option>
+                    <option selected>entidad</option>
                 <option value="1">Colpensiones</option>
                 <option value="2">Porvenir</option>
                 <option value="3">Protecciòn</option>
@@ -197,13 +196,13 @@
                 <option value="5">Old mutal</option>
                 <option value="6">otro fondo privado de pensiones</option>
               </select>
+            </select>
 
             <label for="salario">Salario actual *</label>
-<div style="display: flex; align-items: center;">
-    <span style="margin-right: 5px;">$</span> <!-- Símbolo de moneda -->
-    <input type="number" id="salario" name="salario" placeholder="0.00" required min="0" step="0.01">
-</div>
-
+            <div style="display: flex; align-items: center;">
+                <span style="margin-right: 5px;">$</span>
+                <input type="number" id="salario" name="salario" placeholder="0.00" required min="0" step="0.01">
+            </div>
 
             <button type="button" onclick="calcularPension()">Calcular Pensión</button>
         </form>
